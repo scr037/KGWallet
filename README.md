@@ -9,7 +9,11 @@ End users can swipe through the cards, flip them to see the content on the back 
 
 ## Installation
 
-Swift package manager coming soon. 
+Swift package manager coming soon.
+
+## Compatibility
+
+iOS 13 and newer.
 
 ## Useage
 
