@@ -10,7 +10,7 @@ import Combine
 
 public class KGCard: UIView {
     public static let origin = CGPoint(x: 0, y: 0)
-    public static let standardSize = CGSize(width: 220, height: 150)
+    public static let standardSize = CGSize(width: 280, height: 200)
     public static let standardFrame = CGRect(origin: origin, size: standardSize)
     
     var translation: CGPoint?

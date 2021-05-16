@@ -10,8 +10,9 @@ import KGWallet
 
 class ViewController: UIViewController {
 
+    @IBOutlet var actionsStack: UIStackView!
     private var wallet: KGWallet?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -70,40 +71,25 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        // STACK VIEW
-        
-        let stackView = UIStackView(frame: UIScreen.main.bounds)
-        stackView.axis = .vertical
-        self.view.addSubview(stackView)
 
         if let wallet = self.wallet {
-            stackView.addArrangedSubview(wallet)
+            self.view.addSubview(wallet)
         }
         
-        // Buttons stack
-        
-        let buttonsStack = UIStackView()
-        buttonsStack.axis = .horizontal
-        buttonsStack.distribution = .fillEqually
-        buttonsStack.alignment = .center
-       
         // ADD button
         let addButton = UIButton()
         addButton.backgroundColor = .black
         addButton.setTitle("Add card!", for: .normal)
         addButton.setTitleColor(.white, for: .normal)
         addButton.addTarget(self, action: #selector(addCard), for: .touchUpInside)
-        buttonsStack.addArrangedSubview(addButton)
+        actionsStack.addArrangedSubview(addButton)
         
         let removeButton = UIButton()
         removeButton.backgroundColor = .red
         removeButton.setTitle("Remove card!", for: .normal)
         removeButton.setTitleColor(.white, for: .normal)
         removeButton.addTarget(self, action: #selector(removeCard), for: .touchUpInside)
-        buttonsStack.addArrangedSubview(removeButton)
-        
-        stackView.addArrangedSubview(buttonsStack)
+        actionsStack.addArrangedSubview(removeButton)
     }
 }
 
