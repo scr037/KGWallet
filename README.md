@@ -15,7 +15,7 @@ Swift package manager coming soon.
 
 iOS 13 and newer.
 
-## Useage
+## Usage
 
 Coming soon. 
 Meanwhile, a sample project is provided in the sources. 
