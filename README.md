@@ -1,6 +1,6 @@
 # KGWallet
 
-This is a customizable wallet that can be used to hold a collection of cards in a stack format. Differnt type of cards are supported and more can be created. 
+This is a customizable wallet that can be used to hold a collection of cards in a stack format. Different type of cards are supported and more can be created. 
 The design of the cards is basic, but more customization will come in future versions. 
 
 Each card support different kind of events (like tapping or double tapping) and clients using this wallet can subscribe to these actions and setup handlers for each one of those. 
